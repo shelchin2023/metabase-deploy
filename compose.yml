@@ -7,5 +7,6 @@ services:
       - "3000:3000"
     volumes:
       - /data/metabase-data:/metabase-data
+      - ./plugins/clickhouse.metabase-driver.jar:/plugins/clickhouse.jar
     environment:
       - MB_DB_FILE=/metabase-data/metabase.db
